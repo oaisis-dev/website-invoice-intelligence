@@ -5,6 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Invoice Intelligence — AI-powered invoice processing and COGS tracking built exclusively for restaurants. Capture, categorize, and control your food costs automatically.">
 <title>Invoice Intelligence — AI-Powered Invoice Platform for Restaurants</title>
+<meta property="og:title" content="Invoice Intelligence — AI-Powered Invoice Platform for Restaurants">
+<meta property="og:description" content="Invoice Intelligence — AI-powered invoice processing and COGS tracking built exclusively for restaurants. Capture, categorize, and control your food costs automatically.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="assets/images/ii-lockup-color.svg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Invoice Intelligence — AI-Powered Invoice Platform for Restaurants">
+<meta name="twitter:description" content="Invoice Intelligence — AI-powered invoice processing and COGS tracking built exclusively for restaurants. Capture, categorize, and control your food costs automatically.">
+<meta name="twitter:image" content="assets/images/ii-lockup-color.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Invoice Intelligence — AI-Powered Invoice Platform for Restaurants",
+  "description": "Invoice Intelligence — AI-powered invoice processing and COGS tracking built exclusively for restaurants. Capture, categorize, and control your food costs automatically.",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "OAISIS"
+  },
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "Invoice Intelligence",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web"
+  }
+}
+</script>
 <link rel="icon" type="image/svg+xml" href="assets/images/ii-lockup-color.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +58,15 @@ tailwind.config = {
 }
 </script>
 <link rel="stylesheet" href="assets/css/styles.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTTSYYJJQS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TTTSYYJJQS');
+</script>
 </head>
 <body class="text-gray-800">
 
@@ -49,7 +86,7 @@ tailwind.config = {
       <a href="#how-it-works" class="text-sm font-medium text-gray-600 hover:text-brand-700 transition-colors">How It Works</a>
       <a href="#pricing" class="text-sm font-medium text-gray-600 hover:text-brand-700 transition-colors">Pricing</a>
       <a href="#faq" class="text-sm font-medium text-gray-600 hover:text-brand-700 transition-colors">FAQ</a>
-      <a href="#cta" class="btn-brand text-sm !py-2.5 !px-6 !rounded-xl">Get Started</a>
+      <a href="#cta" class="btn-brand text-sm !py-2.5 !px-6 !rounded-xl" data-gtag-event="cta_click" data-gtag-label="get_started" data-gtag-location="nav" data-gtag-target="#cta">Get Started</a>
     </div>
     <button id="menuBtn" class="hamburger md:hidden flex flex-col gap-[5px] p-2" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -59,7 +96,7 @@ tailwind.config = {
       <a href="#how-it-works" class="text-sm font-medium text-gray-600 py-2 mobile-link">How It Works</a>
       <a href="#pricing" class="text-sm font-medium text-gray-600 py-2 mobile-link">Pricing</a>
       <a href="#faq" class="text-sm font-medium text-gray-600 py-2 mobile-link">FAQ</a>
-      <a href="#cta" class="btn-brand text-sm text-center !py-2.5 mt-1">Get Started</a>
+      <a href="#cta" class="btn-brand text-sm text-center !py-2.5 mt-1" data-gtag-event="cta_click" data-gtag-label="get_started" data-gtag-location="mobile_menu" data-gtag-target="#cta">Get Started</a>
     </div>
   </div>
 </nav>
@@ -80,8 +117,8 @@ tailwind.config = {
           Stop drowning in supplier invoices. Our AI captures, categorizes, and surfaces your true food costs — automatically. See your COGS in real time, not at month-end.
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="#cta" class="btn-brand">Book a Demo</a>
-          <a href="#how-it-works" class="btn-glass">See How It Works</a>
+          <a href="#cta" class="btn-brand" data-gtag-event="cta_click" data-gtag-label="book_demo" data-gtag-location="hero" data-gtag-target="#cta">Book a Demo</a>
+          <a href="#how-it-works" class="btn-glass" data-gtag-event="cta_click" data-gtag-label="see_how_it_works" data-gtag-location="hero" data-gtag-target="#how-it-works">See How It Works</a>
         </div>
         <div class="flex items-center gap-6 mt-8 text-sm text-gray-600">
           <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>No credit card</span>
@@ -299,7 +336,7 @@ tailwind.config = {
         <h3 class="text-lg font-semibold text-gray-900 mb-1">Starter</h3>
         <p class="text-xs text-gray-600 mb-4 font-light">For single-location restaurants</p>
         <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-gray-900 price-value" data-monthly="49" data-annual="39">$39</span><span class="text-sm text-gray-600">/month</span></div>
-        <a href="#cta" class="btn-glass block text-center text-sm !py-3 mb-6">Book a Demo</a>
+        <a href="#cta" class="btn-glass block text-center text-sm !py-3 mb-6" data-gtag-event="cta_click" data-gtag-label="book_demo" data-gtag-location="pricing_starter" data-gtag-target="#cta">Book a Demo</a>
         <ul class="space-y-3">
           <li class="flex items-start gap-2.5 text-sm text-gray-600"><svg class="w-4 h-4 text-brand-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Up to 100 invoices/month</li>
           <li class="flex items-start gap-2.5 text-sm text-gray-600"><svg class="w-4 h-4 text-brand-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>AI categorization</li>
@@ -315,7 +352,7 @@ tailwind.config = {
           <h3 class="text-lg font-semibold text-gray-900 mb-1">Pro</h3>
           <p class="text-xs text-gray-600 mb-4 font-light">For growing restaurant groups</p>
           <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-gray-900 price-value" data-monthly="129" data-annual="99">$99</span><span class="text-sm text-gray-600">/month</span></div>
-          <a href="#cta" class="btn-brand block text-center text-sm !py-3 mb-6">Book a Demo</a>
+          <a href="#cta" class="btn-brand block text-center text-sm !py-3 mb-6" data-gtag-event="cta_click" data-gtag-label="book_demo" data-gtag-location="pricing_pro" data-gtag-target="#cta">Book a Demo</a>
           <ul class="space-y-3">
             <li class="flex items-start gap-2.5 text-sm text-gray-600"><svg class="w-4 h-4 text-brand-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unlimited invoices</li>
             <li class="flex items-start gap-2.5 text-sm text-gray-600"><svg class="w-4 h-4 text-brand-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Up to 5 locations</li>
@@ -330,7 +367,7 @@ tailwind.config = {
         <h3 class="text-lg font-semibold text-gray-900 mb-1">Enterprise</h3>
         <p class="text-xs text-gray-600 mb-4 font-light">For large-scale operations</p>
         <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-gray-900">Custom</span></div>
-        <a href="#cta" class="btn-glass block text-center text-sm !py-3 mb-6">Contact Sales</a>
+        <a href="#cta" class="btn-glass block text-center text-sm !py-3 mb-6" data-gtag-event="cta_click" data-gtag-label="contact_sales" data-gtag-location="pricing_enterprise" data-gtag-target="#cta">Contact Sales</a>
         <ul class="space-y-3">
           <li class="flex items-start gap-2.5 text-sm text-gray-600"><svg class="w-4 h-4 text-brand-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unlimited everything</li>
           <li class="flex items-start gap-2.5 text-sm text-gray-600"><svg class="w-4 h-4 text-brand-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Custom integrations & API</li>
@@ -383,7 +420,7 @@ tailwind.config = {
       <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight mb-4 relative z-10">Ready to see your <span class="gradient-text">true food costs?</span></h2>
       <p class="text-gray-600 max-w-lg mx-auto mb-8 font-light relative z-10">Join 800+ restaurants that replaced guesswork with real-time COGS visibility. Start your free trial today — no credit card required.</p>
       <div class="flex flex-wrap justify-center gap-4 relative z-10">
-        <a href="#" class="btn-brand text-base !px-10" onclick="openModal('contactModal');return false">Book a Demo</a>
+        <a href="#" class="btn-brand text-base !px-10" onclick="openModal('contactModal');return false" data-gtag-event="cta_click" data-gtag-label="book_demo" data-gtag-location="cta_section" data-gtag-target="contactModal">Book a Demo</a>
       </div>
       <div class="flex items-center justify-center gap-3 mt-8 relative z-10">
         <div class="flex -space-x-2">
@@ -405,7 +442,7 @@ tailwind.config = {
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
         <div><img src="assets/images/ii-lockup-color.svg" alt="Invoice Intelligence" class="h-7 mb-4"><p class="text-xs text-gray-600 leading-relaxed font-light">AI-powered invoice management built exclusively for the restaurant industry.</p></div>
         <div><h4 class="text-xs font-semibold text-gray-700 tracking-widest uppercase mb-3">Product</h4><ul class="space-y-2"><li><a href="#features" class="text-xs text-gray-600 hover:text-brand-700 transition-colors font-light">Features</a></li><li><a href="#how-it-works" class="text-xs text-gray-600 hover:text-brand-700 transition-colors font-light">How It Works</a></li><li><a href="#pricing" class="text-xs text-gray-600 hover:text-brand-700 transition-colors font-light">Pricing</a></li><li><a href="#faq" class="text-xs text-gray-600 hover:text-brand-700 transition-colors font-light">FAQ</a></li></ul></div>
-        <div><h4 class="text-xs font-semibold text-gray-700 tracking-widest uppercase mb-3">Company</h4><ul class="space-y-2"><li><a href="#" class="text-xs text-gray-600 hover:text-brand-700 transition-colors font-light">About</a></li><li><a href="#" class="text-xs text-gray-600 hover:text-brand-700 transition-colors font-light" onclick="openModal('contactModal');return false">Contact</a></li></ul></div>
+        <div><h4 class="text-xs font-semibold text-gray-700 tracking-widest uppercase mb-3">Company</h4><ul class="space-y-2"><li><a href="#" class="text-xs text-gray-600 hover:text-brand-700 transition-colors font-light">About</a></li><li><a href="#" class="text-xs text-gray-600 hover:text-brand-700 transition-colors font-light" onclick="openModal('contactModal');return false" data-gtag-event="cta_click" data-gtag-label="contact" data-gtag-location="footer" data-gtag-target="contactModal">Contact</a></li></ul></div>
         <div><h4 class="text-xs font-semibold text-gray-700 tracking-widest uppercase mb-3">Legal</h4><ul class="space-y-2"><li><a href="#" class="text-xs text-gray-600 hover:text-brand-700 transition-colors font-light" onclick="openModal('privacyModal');return false">Privacy Policy</a></li><li><a href="#" class="text-xs text-gray-600 hover:text-brand-700 transition-colors font-light" onclick="openModal('termsModal');return false">Terms of Service</a></li><li><a href="#" class="text-xs text-gray-600 hover:text-brand-700 transition-colors font-light" onclick="openModal('a11yModal');return false">Accessibility</a></li></ul></div>
       </div>
       <div class="border-t border-white/30 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">

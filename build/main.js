@@ -9,6 +9,23 @@ document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click
 const ro = new IntersectionObserver((e) => { e.forEach(en => { if (en.isIntersecting) en.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
 
+/* ===== ANALYTICS (GA4 gtag) ===== */
+function trackEvent(eventName, params = {}) {
+  if (typeof window.gtag !== 'function') return;
+  window.gtag('event', eventName, params);
+}
+
+document.querySelectorAll('[data-gtag-event]').forEach(el => {
+  el.addEventListener('click', () => {
+    trackEvent(el.dataset.gtagEvent, {
+      cta_label: el.dataset.gtagLabel || undefined,
+      cta_location: el.dataset.gtagLocation || undefined,
+      cta_target: el.dataset.gtagTarget || undefined,
+      cta_text: (el.textContent || '').trim() || undefined,
+    });
+  });
+});
+
 function toggleFaq(btn) {
   const item = btn.closest('.faq-item'), ans = item.querySelector('.faq-answer'), chev = item.querySelector('.faq-chevron'), isOpen = ans.classList.contains('open');
   document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
@@ -128,6 +145,12 @@ function submitContact() {
     if (firstErr) firstErr.focus();
     return;
   }
+
+  trackEvent('form_submit', {
+    form_id: 'contact_form',
+    form_location: 'contact_modal',
+    demo_requested: demo.checked,
+  });
 
   // Build email
   const now = new Date();
