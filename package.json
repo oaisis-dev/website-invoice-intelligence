@@ -1,0 +1,9 @@
+{
+  "name": "website-invoice-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Invoice Intelligence landing page and contact API",
+  "dependencies": {
+    "resend": "^4.0.0"
+  }
+}

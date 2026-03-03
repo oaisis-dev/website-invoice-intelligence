@@ -152,29 +152,40 @@ function submitContact() {
     demo_requested: demo.checked,
   });
 
-  // Build email
-  const now = new Date();
-  const pad = (n) => String(n).padStart(2, '0');
-  const timestamp = `${pad(now.getUTCMonth()+1)}/${pad(now.getUTCDate())}/${now.getUTCFullYear()} ${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())}`;
-  const confirmation = demo.checked ? 'Demo' : 'Contact Only';
-  const subject = encodeURIComponent('Invoice Intelligence contact');
-  const body = encodeURIComponent(
-    `Name: ${name.value.trim()}\n` +
-    `Business Name: ${biz.value.trim()}\n` +
-    `Business Email: ${email.value.trim()}\n` +
-    `Message: ${msg.value.trim() || '(none)'}\n` +
-    `Confirmation: ${confirmation}\n` +
-    `UTC Date/Time Stamp: ${timestamp}`
-  );
-  const cc = encodeURIComponent('chris@openoaisis.com');
-  const mailto = `mailto:agent@openoaisis.com?cc=${cc}&subject=${subject}&body=${body}`;
+  const submitBtn = document.getElementById('cf-submit');
+  const submitErr = document.getElementById('cf-submit-err');
+  submitErr.classList.remove('visible');
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending…';
 
-  window.location.href = mailto;
-
-  // Show success
-  document.getElementById('contactForm').classList.add('hidden');
-  document.getElementById('contactSuccess').classList.remove('hidden');
-
-  // Reset form fields for next open
-  name.value = ''; biz.value = ''; email.value = ''; msg.value = ''; demo.checked = false;
+  const apiUrl = '/api/contact';
+  fetch(apiUrl, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: name.value.trim(),
+      businessName: biz.value.trim(),
+      email: email.value.trim(),
+      message: msg.value.trim(),
+      demoRequested: demo.checked,
+    }),
+  })
+    .then(function (res) {
+      if (!res.ok) return res.json().then(function (body) { throw new Error(body?.error || 'Send failed'); });
+      return res.json();
+    })
+    .then(function () {
+      document.getElementById('contactForm').classList.add('hidden');
+      document.getElementById('contactSuccess').classList.remove('hidden');
+      name.value = '';
+      biz.value = '';
+      email.value = '';
+      msg.value = '';
+      demo.checked = false;
+    })
+    .catch(function () {
+      submitErr.classList.add('visible');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit';
+    });
 }
