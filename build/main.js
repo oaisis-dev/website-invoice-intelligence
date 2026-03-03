@@ -60,6 +60,11 @@ function openModal(id) {
     document.getElementById('contactForm').classList.remove('hidden');
     document.getElementById('contactSuccess').classList.add('hidden');
     clearFormErrors();
+    var contactSubmit = document.getElementById('cf-submit');
+    if (contactSubmit) {
+      contactSubmit.disabled = false;
+      contactSubmit.textContent = 'Submit';
+    }
   }
 
   // Focus the close button
@@ -182,6 +187,8 @@ function submitContact() {
       email.value = '';
       msg.value = '';
       demo.checked = false;
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit';
     })
     .catch(function () {
       submitErr.classList.add('visible');
