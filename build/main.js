@@ -33,15 +33,7 @@ function toggleFaq(btn) {
   if (!isOpen) { ans.classList.add('open'); chev.classList.add('open'); }
 }
 
-const bt = document.getElementById('billingToggle'), ml = document.getElementById('monthlyLabel'), al = document.getElementById('annualLabel');
-let isAnnual = true;
-bt.addEventListener('click', () => {
-  isAnnual = !isAnnual;
-  bt.classList.toggle('active', isAnnual);
-  ml.className = isAnnual ? 'text-sm font-medium text-gray-600' : 'text-sm font-semibold text-gray-800';
-  al.querySelector('.glass-subtle') && (al.className = isAnnual ? 'text-sm font-semibold text-gray-800' : 'text-sm font-medium text-gray-600');
-  document.querySelectorAll('.price-value').forEach(el => { el.textContent = `$${isAnnual ? el.dataset.annual : el.dataset.monthly}`; });
-});
+/* Billing toggle removed — single founding customer price */
 
 /* ===== MODAL SYSTEM ===== */
 let activeModal = null;
