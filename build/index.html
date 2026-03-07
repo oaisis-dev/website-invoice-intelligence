@@ -86,7 +86,7 @@ tailwind.config = {
       <a href="#how-it-works" class="text-sm font-medium text-gray-600 hover:text-brand-700 transition-colors">How It Works</a>
       <a href="#pricing" class="text-sm font-medium text-gray-600 hover:text-brand-700 transition-colors">Pricing</a>
       <a href="#faq" class="text-sm font-medium text-gray-600 hover:text-brand-700 transition-colors">FAQ</a>
-      <a href="#cta" class="btn-brand text-sm !py-2.5 !px-6 !rounded-xl" data-gtag-event="cta_click" data-gtag-label="get_started" data-gtag-location="nav" data-gtag-target="#cta">Get Started</a>
+      <a href="#cta" class="btn-brand text-sm !py-2.5 !px-6 !rounded-xl" data-gtag-event="cta_click" data-gtag-label="get_started" data-gtag-location="nav" data-gtag-target="#pricing">Get Started</a>
     </div>
     <button id="menuBtn" class="hamburger md:hidden flex flex-col gap-[5px] p-2 shrink-0" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -96,7 +96,7 @@ tailwind.config = {
       <a href="#how-it-works" class="text-sm font-medium text-gray-600 py-2 mobile-link">How It Works</a>
       <a href="#pricing" class="text-sm font-medium text-gray-600 py-2 mobile-link">Pricing</a>
       <a href="#faq" class="text-sm font-medium text-gray-600 py-2 mobile-link">FAQ</a>
-      <a href="#cta" class="btn-brand text-sm text-center !py-2.5 mt-1" data-gtag-event="cta_click" data-gtag-label="get_started" data-gtag-location="mobile_menu" data-gtag-target="#cta">Get Started</a>
+      <a href="#cta" class="btn-brand text-sm text-center !py-2.5 mt-1" data-gtag-event="cta_click" data-gtag-label="get_started" data-gtag-location="mobile_menu" data-gtag-target="#pricing">Get Started</a>
     </div>
   </div>
 </nav>
@@ -117,11 +117,11 @@ tailwind.config = {
           Upload your invoices. AI extracts every line item, validates the math, and exports bookkeeper-ready spreadsheets. Done.
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="#cta" class="btn-brand" data-gtag-event="cta_click" data-gtag-label="book_demo" data-gtag-location="hero" data-gtag-target="#cta">Book a Demo</a>
-          <a href="#how-it-works" class="btn-glass" data-gtag-event="cta_click" data-gtag-label="see_how_it_works" data-gtag-location="hero" data-gtag-target="#how-it-works">See How It Works</a>
+          <a href="#pricing" class="btn-brand" data-gtag-event="cta_click" data-gtag-label="start_now" data-gtag-location="hero" data-gtag-target="#pricing">Start Now &mdash; $100/mo</a>
+          <a href="#cta" class="btn-glass" data-gtag-event="cta_click" data-gtag-label="book_demo" data-gtag-location="hero" data-gtag-target="#cta">Book a Demo</a>
         </div>
         <div class="flex items-center gap-6 mt-8 text-sm text-gray-600">
-          <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>No credit card</span>
+          <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>10-Hour Promise guarantee</span>
           <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Setup in 5 min</span>
           <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Cancel anytime</span>
         </div>
@@ -284,7 +284,7 @@ tailwind.config = {
         <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-100 to-brand-200/50 flex items-center justify-center mb-5"><svg class="w-6 h-6 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg></div>
         <h3 class="text-lg font-semibold text-gray-900 mb-2">Want to be one of 20?</h3>
         <p class="text-sm text-gray-600 leading-relaxed font-light mb-5">Founding customers get $100/month pricing locked for life, direct access to our team, and input on the product roadmap.</p>
-        <a href="#cta" class="btn-brand text-sm !py-2.5 !px-6" data-gtag-event="cta_click" data-gtag-label="book_demo" data-gtag-location="founding_customers" data-gtag-target="#cta">Book a Demo</a>
+        <button onclick="startCheckout()" class="btn-brand text-sm !py-2.5 !px-6" data-gtag-event="cta_click" data-gtag-label="start_now" data-gtag-location="founding_customers">Start Now &mdash; $100/mo</button>
       </div>
       <div class="glass-card p-6 reveal reveal-delay-2 text-center flex flex-col items-center justify-center">
         <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-100 to-amber-200/50 flex items-center justify-center mb-5"><svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
@@ -296,7 +296,7 @@ tailwind.config = {
         <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-100 to-sky-200/50 flex items-center justify-center mb-5"><svg class="w-6 h-6 text-sky-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></div>
         <h3 class="text-lg font-semibold text-gray-900 mb-2">No Risk, No Commitment</h3>
         <p class="text-sm text-gray-600 leading-relaxed font-light mb-5">No credit card required. No contract. Cancel anytime. And if you don't save 10 hours in 30 days, your first month is refunded.</p>
-        <a href="#cta" class="btn-glass text-sm !py-2.5 !px-6" data-gtag-event="cta_click" data-gtag-label="get_started" data-gtag-location="no_risk" data-gtag-target="#cta">Get Started</a>
+        <a href="#cta" class="btn-glass text-sm !py-2.5 !px-6" data-gtag-event="cta_click" data-gtag-label="get_started" data-gtag-location="no_risk" data-gtag-target="#pricing">Get Started</a>
       </div>
     </div>
   </div>
@@ -352,7 +352,8 @@ tailwind.config = {
           <p class="text-xs text-gray-600 mb-4 font-light">Locked for life — this rate never increases</p>
           <div class="flex items-baseline gap-1 mb-2"><span class="text-4xl font-bold text-gray-900">$100</span><span class="text-sm text-gray-600">/month</span></div>
           <p class="text-xs text-brand-700 font-semibold mb-6">First 20 founding customers only — <span id="spotsRemaining">17</span> spots remaining</p>
-          <a href="#cta" class="btn-brand block text-center text-sm !py-3 mb-6" data-gtag-event="cta_click" data-gtag-label="book_demo" data-gtag-location="pricing_founding" data-gtag-target="#cta">Book a Demo</a>
+          <button onclick="startCheckout()" class="btn-brand block w-full text-center text-sm !py-3 mb-3" data-gtag-event="cta_click" data-gtag-label="start_now" data-gtag-location="pricing_founding">Start Now &mdash; $100/month</button>
+          <a href="#cta" class="btn-glass block text-center text-sm !py-2.5 mb-6" data-gtag-event="cta_click" data-gtag-label="book_demo_first" data-gtag-location="pricing_founding" data-gtag-target="#cta">Book a Demo First</a>
           <ul class="space-y-3">
             <li class="flex items-start gap-2.5 text-sm text-gray-600"><svg class="w-4 h-4 text-brand-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unlimited invoices</li>
             <li class="flex items-start gap-2.5 text-sm text-gray-600"><svg class="w-4 h-4 text-brand-700 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>AI extraction + math validation</li>
@@ -419,12 +420,13 @@ tailwind.config = {
       <div class="absolute w-40 h-40 rounded-full bg-brand-200/20 -top-10 -right-10 blur-2xl"></div>
       <div class="absolute w-32 h-32 rounded-full bg-green-200/15 bottom-0 -left-8 blur-2xl"></div>
       <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight mb-4 relative z-10">Ready to stop paying people <span class="gradient-text">to type?</span></h2>
-      <p class="text-gray-600 max-w-lg mx-auto mb-8 font-light relative z-10">We're onboarding our first 20 founding customers at $100/month — locked for life. No credit card required to start.</p>
+      <p class="text-gray-600 max-w-lg mx-auto mb-8 font-light relative z-10">We're onboarding our first 20 founding customers at $100/month — locked for life. The 10-Hour Promise: save 10+ hours in 30 days or your first month is free.</p>
       <div class="flex flex-wrap justify-center gap-4 relative z-10">
-        <a href="#" class="btn-brand text-base !px-10" onclick="openModal('contactModal');return false" data-gtag-event="cta_click" data-gtag-label="book_demo" data-gtag-location="cta_section" data-gtag-target="contactModal">Book a Demo</a>
+        <button onclick="startCheckout()" class="btn-brand text-base !px-10" data-gtag-event="cta_click" data-gtag-label="start_now" data-gtag-location="cta_section">Start Now &mdash; $100/month</button>
+        <a href="#" class="btn-glass text-base !px-8" onclick="openModal('contactModal');return false" data-gtag-event="cta_click" data-gtag-label="book_demo" data-gtag-location="cta_section" data-gtag-target="contactModal">Book a Demo First</a>
       </div>
       <div class="flex items-center justify-center gap-3 mt-8 relative z-10">
-        <span class="text-xs text-gray-600 font-medium">The 10-Hour Promise: Save 10+ hours in 30 days or your first month is free.</span>
+        <span class="text-xs text-gray-600 font-medium">Founding customer pricing locked for life. Cancel anytime. No setup fees.</span>
       </div>
     </div>
   </div>
@@ -640,5 +642,122 @@ tailwind.config = {
 </div>
 
 <script src="assets/js/main.js" defer></script>
+<script>
+/* ═══ Stripe Checkout ═══ */
+function startCheckout() {
+  // Track the click
+  if (typeof gtag === 'function') {
+    gtag('event', 'begin_checkout', { currency: 'USD', value: 100 });
+  }
+
+  // Open a quick email modal before redirecting to Stripe
+  openCheckoutModal();
+}
+
+function openCheckoutModal() {
+  var m = document.getElementById('checkoutModal');
+  if (m) {
+    m.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    var input = document.getElementById('ck-email');
+    if (input) setTimeout(function() { input.focus(); }, 100);
+  }
+}
+
+function closeCheckoutModal() {
+  var m = document.getElementById('checkoutModal');
+  if (m) {
+    m.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+async function submitCheckout() {
+  var email = (document.getElementById('ck-email').value || '').trim().toLowerCase();
+  var name = (document.getElementById('ck-name').value || '').trim();
+  var company = (document.getElementById('ck-company').value || '').trim();
+  var btn = document.getElementById('ck-submit');
+  var err = document.getElementById('ck-err');
+
+  // Validate
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    err.textContent = 'Please enter a valid email address.';
+    err.style.display = 'block';
+    return;
+  }
+  if (!name) {
+    err.textContent = 'Please enter your name.';
+    err.style.display = 'block';
+    return;
+  }
+
+  err.style.display = 'none';
+  btn.disabled = true;
+  btn.textContent = 'Redirecting to checkout...';
+
+  try {
+    var res = await fetch('/api/create-checkout-session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, name: name, company: company }),
+    });
+    var data = await res.json();
+
+    if (data.ok && data.url) {
+      window.location.href = data.url;
+    } else {
+      throw new Error(data.error || 'Checkout unavailable');
+    }
+  } catch (e) {
+    err.textContent = e.message || 'Something went wrong. Please try again or email agent@openoaisis.com.';
+    err.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Continue to Checkout';
+  }
+}
+
+// Handle Enter key in checkout modal
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') {
+    var m = document.getElementById('checkoutModal');
+    if (m && m.classList.contains('active')) {
+      e.preventDefault();
+      submitCheckout();
+    }
+  }
+});
+</script>
+
+<!-- Checkout Email Modal -->
+<div id="checkoutModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+  <div class="modal-panel p-8 sm:p-10" style="max-width:440px;">
+    <button class="modal-close" onclick="closeCheckoutModal()" aria-label="Close dialog">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <div class="text-center mb-6">
+      <div class="glass-subtle inline-block px-3 py-1 text-[10px] font-bold text-brand-700 tracking-widest uppercase rounded-full mb-3">Founding Customer</div>
+      <h2 id="checkoutTitle" class="text-xl font-bold text-gray-900 mb-1">Start Your Subscription</h2>
+      <p class="text-sm text-gray-600">$100/month &mdash; locked for life. Cancel anytime.</p>
+    </div>
+    <div class="space-y-4">
+      <div>
+        <label for="ck-name" class="form-label">Your Name <span class="text-red-600">*</span></label>
+        <input id="ck-name" type="text" class="form-input" placeholder="Jane Smith" required autocomplete="name">
+      </div>
+      <div>
+        <label for="ck-email" class="form-label">Business Email <span class="text-red-600">*</span></label>
+        <input id="ck-email" type="email" class="form-input" placeholder="jane@rosemarycafe.com" required autocomplete="email">
+      </div>
+      <div>
+        <label for="ck-company" class="form-label">Restaurant / Business Name</label>
+        <input id="ck-company" type="text" class="form-input" placeholder="Rosemary Cafe" autocomplete="organization">
+      </div>
+      <p id="ck-err" class="text-sm text-red-600" style="display:none;" role="alert"></p>
+      <button id="ck-submit" type="button" class="btn-brand w-full text-center !rounded-xl !py-3" onclick="submitCheckout()">Continue to Checkout</button>
+      <p class="text-xs text-gray-500 text-center">You'll be redirected to Stripe's secure checkout. The 10-Hour Promise applies.</p>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

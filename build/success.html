@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Welcome to Invoice Intelligence</title>
+<link rel="icon" type="image/svg+xml" href="assets/images/ii-lockup-color.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Outfit', 'system-ui', 'sans-serif'],
+        serif: ['"DM Serif Display"', 'serif'],
+      },
+      colors: {
+        brand: {
+          50: '#edfff3', 100: '#d5ffea', 200: '#aeffd6', 300: '#72ffb4',
+          400: '#2ffb8a', 500: '#00e06a', 600: '#00b955', 700: '#27653D',
+          800: '#1e5031', 900: '#19422a',
+        },
+      },
+    },
+  },
+}
+</script>
+<link rel="stylesheet" href="assets/css/styles.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTTSYYJJQS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TTTSYYJJQS');
+  gtag('event', 'purchase', { currency: 'USD', value: 100, transaction_id: 'founding_customer' });
+</script>
+</head>
+<body class="text-gray-800">
+
+<div class="ambient-bg">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="nav-glass fixed top-0 left-0 right-0 z-50 w-full">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2"><img src="assets/images/ii-lockup-color.svg" alt="Invoice Intelligence" class="h-10 sm:h-12 w-auto max-h-12"></a>
+  </div>
+</nav>
+
+<!-- SUCCESS CONTENT -->
+<section class="relative z-10 pt-32 pb-20 lg:pt-40 lg:pb-32">
+  <div class="max-w-2xl mx-auto px-6 text-center">
+    <!-- Success icon -->
+    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-brand-100 to-brand-200/60 flex items-center justify-center mx-auto mb-8" style="animation: float 3s ease-in-out infinite;">
+      <svg class="w-10 h-10 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    </div>
+
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight mb-4">Welcome to Invoice Intelligence</h1>
+    <p class="text-lg text-gray-600 font-light leading-relaxed mb-10">You're officially a founding customer. Your account is being set up now.</p>
+
+    <!-- Next Steps -->
+    <div class="glass-heavy p-8 sm:p-10 text-left mb-8">
+      <h2 class="text-lg font-semibold text-gray-900 mb-6">What happens next</h2>
+      <div class="space-y-5">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center shrink-0 mt-0.5">
+            <span class="text-sm font-bold text-brand-700">1</span>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-gray-900">Check your email</h3>
+            <p class="text-sm text-gray-600 font-light">You'll receive your login credentials and a quick-start guide within the hour.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center shrink-0 mt-0.5">
+            <span class="text-sm font-bold text-brand-700">2</span>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-gray-900">Gather 5&ndash;10 invoices</h3>
+            <p class="text-sm text-gray-600 font-light">Photos, PDFs, scans &mdash; any format works. These will be your first test batch.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center shrink-0 mt-0.5">
+            <span class="text-sm font-bold text-brand-700">3</span>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-gray-900">Upload and watch the AI work</h3>
+            <p class="text-sm text-gray-600 font-light">Every line item extracted, math validated, bookkeeper-ready spreadsheet exported. Under 60 seconds per invoice.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10-Hour Promise reminder -->
+    <div class="glass-subtle py-5 px-8 mb-8">
+      <p class="text-sm text-gray-700 font-light"><span class="font-semibold text-brand-700">The 10-Hour Promise:</span> If you don't save at least 10 hours of AP labor in your first 30 days, we'll refund your first month. No questions asked.</p>
+    </div>
+
+    <!-- Contact -->
+    <p class="text-sm text-gray-600 font-light">
+      Questions? Reach us anytime at <a href="mailto:agent@openoaisis.com" class="text-brand-700 font-medium hover:underline">agent@openoaisis.com</a>
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="relative z-10 pb-8">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center">
+      <span class="text-xs text-gray-500 font-light">&copy; 2026 Invoice Intelligence. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+</style>
+</body>
+</html>
