@@ -1,0 +1,72 @@
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.whl
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+ENV/
+venv-docx/
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+.logs/
+
+# ==============================
+# Node.js / Next.js (frontend)
+# ==============================
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+frontend/.vercel/
+frontend/.env*.local
+
+# ==============================
+# IDE / Editor
+# ==============================
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/
+.ralphy/
+
+# ==============================
+# OS
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Project-specific
+# ==============================
+# Superset / Conductor
+.superset/
+.conductor/
+
+# Excel output files
+*.xlsx
+
+
+sample_invoices/
